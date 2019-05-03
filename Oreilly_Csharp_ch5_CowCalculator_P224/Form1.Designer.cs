@@ -40,9 +40,9 @@
             this.label1.Font = new System.Drawing.Font("新細明體", 12F);
             this.label1.Location = new System.Drawing.Point(21, 19);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 16);
+            this.label1.Size = new System.Drawing.Size(43, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
+            this.label1.Text = "Cows";
             // 
             // numericUpDown1
             // 
@@ -66,6 +66,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.NumericUpDown1_ValueChanged);
             // 
             // Calculate_button
             // 

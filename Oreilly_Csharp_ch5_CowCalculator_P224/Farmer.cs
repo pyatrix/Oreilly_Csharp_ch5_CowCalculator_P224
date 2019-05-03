@@ -10,10 +10,6 @@ namespace Oreilly_Csharp_ch5_CowCalculator_P224
     {
         public int BagsOfFeed;
         public const int FeedMultiplier = 30;
-        public int GetNumberOfCows()
-        {
-            return numberOfCows;
-        }
 
         private int numberOfCows;
         public int NumberOfCows
