@@ -16,7 +16,7 @@ namespace Oreilly_Csharp_ch5_CowCalculator_P224
         public Form1()
         {
             InitializeComponent();
-            farmer = new Farmer() { NumberOfCows = 15 };
+            farmer = new Farmer(15, 30);
         }
 
         private void NumericUpDown1_ValueChanged(object sender , EventArgs e)

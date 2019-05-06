@@ -7,20 +7,25 @@ using System.Threading.Tasks;
 namespace Oreilly_Csharp_ch5_CowCalculator_P224
 {
     class Farmer
-    {        
-        public int BagsOfFeed { get { return numberOfCows * FeedMultiplier; } } //it without propertie of  [set].
-        public const int FeedMultiplier = 30;
-        private int numberOfCows;
-        public int NumberOfCows
+    {
+        public int NumberOfCows;
+        public int FeedMultiplier { get; }
+        public Farmer(int numberOfCows, int feedMultiplier)
+        {
+            this.FeedMultiplier = feedMultiplier;
+            NumberOfCows = numberOfCows;            
+        }
+        private int bagsOfFeed;
+        public int BagsOfFeed
         {
             get
             {
-                return numberOfCows;
+                BagsOfFeed = NumberOfCows * FeedMultiplier;
+                return bagsOfFeed;
             }
             set
             {
-                numberOfCows = value;
-                //BagsOfFeed = numberOfCows * FeedMultiplier;      //replaced by [public int BagsOfFeed { get { return numberOfCows * FeedMultiplier; } }]
+                bagsOfFeed = value;
             }
         }
     }
